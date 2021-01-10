@@ -1,14 +1,14 @@
 steps:
 #First Clone from Google Cloud Source Repository  
-- name: 'gcr.io/festive-canto-301306/helloworldtanmoy:3'
+- name: 'gcr.io/cloud-builders/git'
   args: ['clone','https://source.developers.google.com:2022/p/festive-canto-301306/r/github_tanmoynandy_helloworlddocker']
 
 #Build the image
-- name: 'gcr.io/festive-canto-301306/helloworldtanmoy'
+- name: 'gcr.io/cloud-builders/docker'
   args: ['build','-t','gcr.io/festive-canto-301306/helloworldtanmoy:3','.']
 
 #Push the image  
-- name: 'gcr.io/festive-canto-301306/helloworldtanmoy'
+- name: 'gcr.io/cloud-builders/docker'
   args: ['push','gcr.io/festive-canto-301306/helloworldtanmoy:3']
   
 #Update the container image using kubectl set
