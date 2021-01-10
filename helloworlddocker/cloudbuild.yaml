@@ -3,7 +3,7 @@ steps:
 - name: 'gcr.io/festive-canto-301306/helloworldtanmoy:3'
   args: ['clone','https://source.developers.google.com:2022/p/festive-canto-301306/r/github_tanmoynandy_helloworlddocker']
 
-#Build the image 
+#Build the image s
 - name: 'gcr.io/festive-canto-301306/helloworldtanmoy'
   args: ['build','-t','gcr.io/festive-canto-301306/helloworldtanmoy:3','.']
 
