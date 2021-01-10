@@ -1,7 +1,7 @@
 steps:
 #First Clone from Google Cloud Source Repository  
 - name: 'gcr.io/cloud-builders/git'
-  args: ['clone','https://source.developers.google.com:2022/p/festive-canto-301306/r/github_tanmoynandy_helloworlddocker']
+  args: ['clone','https://source.developers.google.com/p/festive-canto-301306/r/github_tanmoynandy_helloworlddocker']
 
 #Build the image
 - name: 'gcr.io/cloud-builders/docker'
